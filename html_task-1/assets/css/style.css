@@ -249,10 +249,25 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: padding-box;
+    height: 500px;
+    position: relative;
+    overflow: auto;
 }
 
 .head-text {
     padding: 50px;
+    color: white;
+}
+
+.head-text h1 {
+    font-weight: bolder;
+    font-size: 4em;
+}
+
+.navbar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .navbar ul {
@@ -262,6 +277,7 @@ li {
 }
 
 .navbar ul li {
+    color: #fff;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -270,8 +286,14 @@ li {
 }
 
 .navbar ul li:hover {
-    background-color: rgba(238, 227, 227, 0.253);
+    background-color: darkgoldenrod;
     cursor: pointer;
+}
+
+div h2 {
+    font-weight: bold;
+    font-size: 2em;
+    padding: 10px 0px 10px;
 }
 
 
@@ -283,6 +305,11 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+
+.img-col-1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 .img-col-1 ul {
     text-align: center;
@@ -301,7 +328,6 @@ li {
 
 .nav-buttons .button {
     background-color: #8b8f8b;
-    /* Green */
     border: none;
     color: rgb(0, 0, 0);
     padding: 20px;
@@ -311,6 +337,10 @@ li {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+.nav-buttons .button:hover {
+    background-color: darkgoldenrod;
 }
 
 .box {
@@ -327,6 +357,23 @@ li {
 .special {
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+.special button {
+    background-color: #859285a1;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.special button:hover {
+    background-color: darkgoldenrod;
 }
 
 .float-container {
@@ -352,6 +399,7 @@ li {
 =================================*/
 
 .footer-text {
+    padding: 10px 0px 10px;
     clear: left;
     color: white;
     text-align: center;
@@ -369,3 +417,15 @@ li {
 /*media query for 995px starts here*/
 
 @media only screen and (max-width: 995px) {}
+
+@media only screen and (max-width: 700px) {
+    .bgimg {
+        height: 250px;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .img-col-1 ul {
+        display: flex;
+    }
+}
