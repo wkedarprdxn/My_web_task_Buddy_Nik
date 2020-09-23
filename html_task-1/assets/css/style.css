@@ -257,11 +257,18 @@ li {
 .head-text {
     padding: 50px;
     color: white;
+    text-shadow: black 1px 1px;
 }
 
 .head-text h1 {
+    text-transform: uppercase;
+    text-shadow: black 1px 3px;
     font-weight: bolder;
     font-size: 4em;
+}
+
+.head-text p {
+    padding-top: 10px;
 }
 
 .navbar {
@@ -271,7 +278,7 @@ li {
 }
 
 .navbar ul {
-    background-color: rgba(116, 107, 107, 0.253);
+    background-color: rgba(66, 52, 52, 0.253);
     width: 100%;
     border-bottom: 5px solid rgb(66, 29, 151);
 }
@@ -388,6 +395,10 @@ div h2 {
     display: block;
 }
 
+figure figcaption {
+    margin: 10px 0px 10px
+}
+
 
 /*=================================
   main styling ends here
@@ -399,7 +410,7 @@ div h2 {
 =================================*/
 
 .footer-text {
-    padding: 10px 0px 10px;
+    padding: 15px 0px 15px;
     clear: left;
     color: white;
     text-align: center;
