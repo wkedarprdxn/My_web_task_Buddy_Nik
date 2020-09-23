@@ -258,6 +258,7 @@ li {
 .navbar ul {
     background-color: rgba(116, 107, 107, 0.253);
     width: 100%;
+    border-bottom: 5px solid rgb(66, 29, 151);
 }
 
 .navbar ul li {
@@ -270,6 +271,7 @@ li {
 
 .navbar ul li:hover {
     background-color: rgba(238, 227, 227, 0.253);
+    cursor: pointer;
 }
 
 
@@ -291,6 +293,54 @@ li {
     height: 200px;
 }
 
+.nav-buttons {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nav-buttons .button {
+    background-color: #8b8f8b;
+    /* Green */
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.box {
+    float: left;
+    margin-right: 15px;
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: rgb(207, 232, 220);
+    padding: 1em;
+    margin: 1em;
+}
+
+.special {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.float-container {
+    background-color: rgb(79, 185, 227);
+    padding: 10px;
+    color: #fff;
+}
+
+.float-container::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
 
 /*=================================
   main styling ends here
@@ -302,6 +352,7 @@ li {
 =================================*/
 
 .footer-text {
+    clear: left;
     color: white;
     text-align: center;
 }
